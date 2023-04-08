@@ -12,12 +12,9 @@ class NoteBook(UserDict):
         self.x = NoteBookView
 
     def read_file(self):
-        with open("NoteBook.bin", "rb") as reader:
-            received_notebook = pickle.load(reader)
-            self.data = received_notebook.data
-            self.x = received_notebook.x
-            self.index = received_notebook.index
-            self.ind_list = received_notebook.ind_list
+        with open('NoteBook.bin', 'rb') as reader:
+            self.data = pickle.load(reader)
+            return self.data
 
     def write_file(self):
         with open("NoteBook.bin", "wb") as writer:

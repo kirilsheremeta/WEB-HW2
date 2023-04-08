@@ -63,6 +63,7 @@ def delete_note(index):
     else:
         return f"Not found index {index}"
 
+
 def search_notes(message):
     return NOTEBOOK.search_note(message)
 

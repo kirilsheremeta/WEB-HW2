@@ -1,6 +1,6 @@
 from collections import UserDict
 from datetime import datetime
-from verification import *
+from verification import BirthdayVerification, MailVerification, PhoneVerification
 from pretty_view import AddressBookView
 import pickle
 

@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0faad527-f0b4-4495-baa6-467a68130d04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assistant/addressbook_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/addressbook_classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assistant/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistant/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistant/pretty_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/pretty_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistant/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/notes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assistant/notes_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/notes_classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assistant/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

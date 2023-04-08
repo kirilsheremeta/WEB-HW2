@@ -1,4 +1,6 @@
-from addressbook_classes import *
+from addressbook_classes import PhoneLengthError, PhoneError, MailTypeError, MailExistError, AddressTypeError
+from addressbook_classes import AddressExistError, PhoneMissing, UserMissing, BirthdayDateError, BirthdayTypeError
+from addressbook_classes import UnknownCommand, ElseError
 
 
 def input_error(func):

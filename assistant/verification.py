@@ -1,13 +1,13 @@
 import re
 from datetime import datetime
-# from decorators import input_error
-from decorators import BirthdayTypeError, PhoneError, MailTypeError, PhoneLengthError
+import decorators
+
 
 class Verification:
     # @input_error
     def verificate(self, *args):
         raise NotImplementedError
-    
+
 
 class BirthdayVerification(Verification):
     # @input_error
@@ -15,10 +15,10 @@ class BirthdayVerification(Verification):
         try:
             birthday = datetime(year=year, month=month, day=day)
         except ValueError:
-            raise BirthdayTypeError
+            raise decorators.BirthdayTypeError
         else:
             return str(birthday.date())
-        
+
 
 class MailVerification(Verification):
     # @input_error
@@ -27,8 +27,8 @@ class MailVerification(Verification):
         if re.fullmatch(regex, str(email)):
             return email
         else:
-            raise MailTypeError
-        
+            raise decorators.MailTypeError
+
 
 class NameVerification(Verification):
     # @input_error
@@ -65,7 +65,7 @@ class PhoneVerification(Verification):
         try:
             new_phone = [str(int(i)) for i in new_phone]
         except ValueError:
-            raise PhoneError
+            raise decorators.PhoneError
         else:
             new_phone = "".join(new_phone)
             if len(new_phone) == 12:
@@ -73,5 +73,4 @@ class PhoneVerification(Verification):
             elif len(new_phone) == 10:
                 return f"+38{new_phone}"
             else:
-                raise PhoneLengthError
-
+                raise decorators.PhoneLengthError
